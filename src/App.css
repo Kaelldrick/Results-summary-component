@@ -1,0 +1,15 @@
+.card {
+    background-color: var(--White);
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    box-shadow: 13px 7px 30px -8px var(--Light_lavender);
+}
+
+@media screen and (width <=580px) {
+    .card {
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+    }
+}

@@ -1,0 +1,101 @@
+.card__summary {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    &>p {
+        color: var(--Dark_gray_blue);
+        font-weight: 700;
+    }
+
+    & .summary__table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.8rem;
+        display: block;
+        flex: 1;
+
+        & tbody {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+
+        & tr {
+            display: flex;
+            border-radius: 8px;
+
+            &.reaction {
+                background-color: hsla(0, 100%, 67%, 0.1);
+
+                & td:first-child {
+                    color: var(--Light_red);
+                }
+            }
+
+            &.memory {
+                background-color: hsla(39, 100%, 56%, 0.1);
+
+                & td:first-child {
+                    color: var(--Orangey_yellow);
+                }
+            }
+
+            &.verbal {
+                background-color: hsla(166, 100%, 37%, 0.1);
+
+                & td:first-child {
+                    color: var(--Green_teal);
+                }
+            }
+
+            &.visual {
+                background-color: hsla(234, 85%, 45%, 0.1);
+
+                & td:first-child {
+                    color: var(--Cobalt_blue);
+                }
+            }
+        }
+
+        & td {
+            padding: 13px 15px;
+
+            &:nth-child(2n+1) {
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                & img {
+                    filter: drop-shadow(2px 1px 1px);
+                }
+            }
+
+            &:nth-child(2n) {
+                margin-left: auto;
+
+                & span {
+                    color: hsla(224, 30%, 27%, 0.6);
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    & .summary__button {
+        padding: 14px 15px;
+        border-radius: 25px;
+        border: 0;
+        background-color: var(--Dark_gray_blue);
+        color: var(--White);
+        font-weight: 600;
+        font-family: 'Hanken Grotesk';
+
+        &:hover {
+            background-image: linear-gradient(var(--Light_slate_blue), var(--Light_royal_blue));
+            cursor: pointer;
+        }
+    }
+}

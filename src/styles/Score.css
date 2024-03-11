@@ -1,0 +1,65 @@
+.card__score {
+    background-image: linear-gradient(var(--Light_slate_blue), var(--Light_royal_blue));
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &>p:first-child {
+        color: var(--Light_lavender);
+    }
+
+    & .score__state {
+        font-size: 1.2rem;
+        color: var(--White);
+        font-weight: 500;
+        margin: 0;
+    }
+
+    & .score__text {
+        color: var(--Light_lavender);
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    & .score__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-image: linear-gradient(var(--Violet_blue), var(--Persian_blue));
+
+        & .score__number {
+
+            & p {
+                margin: 0;
+            }
+
+            & p:first-child {
+                font-size: 3rem;
+                font-weight: 800;
+                color: var(--White);
+            }
+
+            & p:last-child {
+                color: var(--Light_lavender);
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (width <=580px) {
+    .card__score {
+        border-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
